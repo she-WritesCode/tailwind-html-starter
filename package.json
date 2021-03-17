@@ -1,0 +1,31 @@
+{
+	"name": "html-tailwind-starter",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "npm-watch",
+		"compile": "cross-env NODE_ENV=devlopment postcss src/styles/tailwind.css -o public/css/tailwind.css",
+		"build": "cross-env NODE_ENV=production postcss src/styles/tailwind.css -o public/css/tailwind.css",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"watch": {
+		"compile": {
+			"patterns": [
+				"src/styles",
+				"*.config.js"
+			],
+			"quiet": false
+		}
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^10.2.5",
+		"postcss": "^8.2.8",
+		"tailwindcss": "^2.0.3",
+		"cross-env": "^7.0.2",
+		"npm-watch": "^0.6.0"
+	}
+}
