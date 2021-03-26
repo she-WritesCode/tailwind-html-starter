@@ -12,8 +12,8 @@
 	"watch": {
 		"compile": {
 			"patterns": [
-				"src/styles",
-				"*.config.js"
+				"src/styles/tailwind.css",
+				"tailwind.config.js"
 			],
 			"quiet": false
 		}
